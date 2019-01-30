@@ -32,13 +32,13 @@ test('return list of fizzbuzzed numbers up to n', function(assert) {
 });
 
 test('return number itself when not divisible by 3 or 5', function(assert) {
-    const inputNumber = 15;
+    const inputNumber = 1;
     const result = fizzBuzz(inputNumber);
-    const expected = 'FizzBuzz';
+    const expected = 1;
     assert.equal(result, expected);
 });
 
-test('return Buzz when divisible by 15', function(assert) {
+test('return FizzBuzz when divisible by 15', function(assert) {
     const inputNumber = 15;
     const result = fizzBuzz(inputNumber);
     const expected = 'FizzBuzz';
