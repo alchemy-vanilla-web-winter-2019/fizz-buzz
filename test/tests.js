@@ -29,6 +29,12 @@ test('return string 1 2 Fizz 4 for input 4', function(assert) {
     assert.equal(result, '1 2 Fizz 4 ');
 });
 
+test('return string 1 2 Fizz 4 Buzz for input 5', function(assert) {
+    let num = 5;
+    let result = fizzBuzzString(num);
+    assert.equal(result, '1 2 Fizz 4 Buzz ');
+});
+
 test('replace numbers divisible by 3 with Fizz', function(assert) {
     let num = 3;
     let result = fizzBuzz(num);
