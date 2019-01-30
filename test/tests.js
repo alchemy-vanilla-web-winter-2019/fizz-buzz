@@ -20,8 +20,8 @@ function fizzBuzz(input,catstring) {
     if(input === 0) {
         return catstring;
     }
-    //let fizzBuzzString = fizzBuzzCheck(input);
-    let fizzBuzzString = input;
+    let fizzBuzzString = fizzBuzzCheck(input);
+    //let fizzBuzzString = input;
     catstring = fizzBuzzString + ', ' + catstring;
     return fizzBuzz(input-1,catstring);
 }
@@ -54,9 +54,18 @@ test('test if input number is not divisible by 3 or 5', function(assert) {
     assert.equal(result, expected);
 });
 
+/*
 test('return a string of all numbers preceding input, comma separated', function(assert) {
     const inputNumber = 7;
     const result = fizzBuzz(inputNumber);
     const expected = '1, 2, 3, 4, 5, 6, 7';
     assert.equal(result, expected);
 }); 
+*/
+
+test('return string of numbers +Fizz/Buzz preceding input, comma separated', function(assert) {
+    const inputNumber = 16;
+    const result = fizzBuzz(inputNumber);
+    const expected = '1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16';
+    assert.equal(result, expected);
+})
