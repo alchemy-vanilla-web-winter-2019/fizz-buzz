@@ -34,3 +34,13 @@ test('input a number divisible by 3 and return the string fizz', function(assert
     assert.equal(result, 'fizz');
 });
 
+
+
+
+
+
+test('test test test', function(assert){
+    let numberTime = 0;
+    let result = fizzBuzz(numberTime);
+    assert.equal(result, numberTime);
+});

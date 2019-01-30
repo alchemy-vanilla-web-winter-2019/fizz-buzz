@@ -5,13 +5,13 @@ let inputInteger = document.getElementById('numberInput');
 
 function fizzBuzz(inputInteger){
     if(inputInteger % 15 === 0){
-        console.log('fizzbuzz');
+        document.write('fizzbuzz');
     } else if(inputInteger % 5 === 0){
-        console.log('buzz');
+        document.write('buzz');
     } else if(inputInteger % 3 === 0){
-        console.log('fizz');
+        document.write('fizz');
     }
 }
 
-fizzBuzz(10);
+fizzBuzz(15);
 
