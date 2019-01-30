@@ -23,13 +23,20 @@ function fizzBuzzString(number) {
     return result;
 }
 
-test('return string 1 2 Fizz 4 for input 4', function(assert) {
+
+test('return string 1, 2, ... FizzBuzz, 16 for input 16', function(assert) {
+    let num = 16;
+    let result = fizzBuzzString(num);
+    assert.equal(result, '1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16');
+});
+
+test('return string 1, 2, Fizz, 4 for input 4', function(assert) {
     let num = 4;
     let result = fizzBuzzString(num);
     assert.equal(result, '1, 2, Fizz, 4');
 });
 
-test('return string 1 2 Fizz 4 Buzz for input 5', function(assert) {
+test('return string 1, 2, Fizz, 4, Buzz for input 5', function(assert) {
     let num = 5;
     let result = fizzBuzzString(num);
     assert.equal(result, '1, 2, Fizz, 4, Buzz');
