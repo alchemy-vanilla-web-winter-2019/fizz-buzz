@@ -13,7 +13,13 @@ header {
 }
 
 main {
+    background: lightcyan;
+    margin: 0px;
+    padding: 50px;
+}
 
+main p {
+    font-size: 18px;
 }
 
 ul {
@@ -26,13 +32,24 @@ h2 {
     color: darkcyan
 }
 
+button {
+    background: white;
+    border: solid 2px lightcoral;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: lightcoral;
+    font-weight: bold;
+
+}
+
 #result {
     font-size: 36px;
     color: lightcoral;
 }
 
 footer {
-    background: lightcyan;
+    background: cadetblue;
     padding: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
