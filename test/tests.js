@@ -2,12 +2,14 @@
 const test = QUnit.test;
 
 function fizzBuzz(number) {
-    let finalString;
+    let finalString = '';
     const originalNumber = number;
     if(number > 0) {
         for(let i = 1; i <= originalNumber; i++) {
-            number = number - (number - 1);
-            finalString =+ i;         
+            finalString = finalString + i;
+            if(i !== originalNumber) {
+                finalString = finalString + ' ';
+            }         
         }
         return finalString;
     }
@@ -23,9 +25,9 @@ function fizzBuzz(number) {
 }
 
 test ('return a string of all numbers including the supplied number', function(assert) {
-    const inputNumber = 4;
+    const inputNumber = 6;
     const result = fizzBuzz(inputNumber);
-    const expected = '1 2 3 4';
+    const expected = '1 2 Fizz 4 5 Buzz';
     assert.equal(result, expected);
 });
 
