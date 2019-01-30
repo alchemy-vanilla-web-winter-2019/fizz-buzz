@@ -7,16 +7,16 @@ function fizzBuzz(number) {
     if(number > 0) {
         for(let i = 1; i <= originalNumber; i++) {
             if(i % 15 === 0) {
-                finalString = finalString + 'FizzBuzz';
+                finalString += 'FizzBuzz';
             } else if(i % 3 === 0) {
                 finalString = finalString + 'Fizz';
             } else if(i % 5 === 0) {
-                finalString = finalString + 'Buzz';
+                finalString += 'Buzz';
             } else {
-                finalString = finalString + i;
+                finalString += i;
             }
             if(i !== originalNumber) {
-                finalString = finalString + ', ';
+                finalString += ', ';
             }         
         }
         return finalString;
