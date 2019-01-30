@@ -1,5 +1,7 @@
 const test = QUnit.test;
 
+/* This function converts a single integer to Fizz, Buzz, FizzBuzz, or returns
+the original value */
 function fizzBuzz(number) {
     if(number % 3 === 0 && number % 5 === 0) {
         return 'FizzBuzz';
@@ -15,6 +17,9 @@ function fizzBuzz(number) {
     }
 }
 
+/* This function uses the fizzBuzz function to make a string from 1 to
+the input parameter `number` containing the integers, Fizz, Buzz, or FizzBuzz
+separated by commas and spaces */
 function fizzBuzzString(number) {
     let result = '1';
     for(let i = 2; i <= number; i++){
@@ -23,7 +28,7 @@ function fizzBuzzString(number) {
     return result;
 }
 
-
+/*** Testing suite ***/
 test('return string 1, 2, ... FizzBuzz, 16 for input 16', function(assert) {
     let num = 16;
     let result = fizzBuzzString(num);
