@@ -54,19 +54,19 @@ test('replace numbers divisible by 3 with Fizz', function(assert) {
 });
 
 test('replace numbers divisible by 5 with Buzz', function(assert) {
-    let num = 5;
+    let num = 10;
     let result = fizzBuzz(num);
     assert.equal(result, 'Buzz');
 });
 
 test('replace numbers divisible by 3 and 5 with FizzBuzz', function(assert) {
-    let num = 15;
+    let num = 30;
     let result = fizzBuzz(num);
     assert.equal(result, 'FizzBuzz');
 });
 
 test('numbers not divisible by 3 or 5 return the number', function(assert) {
-    let num = 7;
+    let num = 11;
     let result = fizzBuzz(num);
     assert.equal(result, num);
 });
