@@ -1,5 +1,22 @@
-const test = QUnit.test;
+ const test = QUnit.test;
 
-test('check if divisible by 3', function(assert) {
+
+// function(fizzBuzz) {
+//     const intergerOne = 15
+//     const keyWordOne = 'fizz';
+//     const keyWordTwo = 'Buzz';
+
+
+//     if( intergerOne %15 === 0)[
+//         return 
+//     ]
+
+
+
+
+
+test('test', function(assert) {
+    const 
+
     assert.equal(true, false);
 });
