@@ -11,12 +11,15 @@
         "browser": true,
         "es6": true
     },
+    "globals": {
+        "QUnit": false
+    },
     "rules": {
         "eqeqeq": [
             "error",
             "always"
         ],
-        "no-console": "off",
+        "no-console": "warn",
         "indent": [
             "error",
             4,
@@ -88,4 +91,4 @@
         ],
         "array-bracket-spacing": "error"
     }
-  }
+}
