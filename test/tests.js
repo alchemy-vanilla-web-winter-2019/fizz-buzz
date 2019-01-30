@@ -40,6 +40,7 @@ test ('return a string of all numbers including the supplied number', function(a
     assert.equal(result, expected);
 });
 
+// Old Tests
 // test('return Fizz if number is evenly divisible by 3', function(assert) {
 //     const inputNumber = 3;
 //     const result = fizzBuzz(inputNumber);
