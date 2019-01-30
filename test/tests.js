@@ -8,10 +8,10 @@ function fizzBuzz(integer) {
     if(integer % 15 === 0) {
         result = wordOne + wordTwo;
     }
-    else if (integer % 5 === 0) {
+    else if(integer % 5 === 0) {
         result = wordTwo;
     }
-    else if (integer % 3 === 0) {
+    else if(integer % 3 === 0) {
         result = wordOne;
     }
     else {
