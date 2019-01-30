@@ -15,7 +15,19 @@ function fizzBuzz(number) {
     }
 }
 
-test('return string 1 2 Fizz 4 for input 4', function(assert))
+function fizzBuzzString(number) {
+    let result = '';
+    for(let i = 1; i <= number; i++){
+        result += fizzBuzz(i) + ' ';
+    }
+    return result;
+}
+
+test('return string 1 2 Fizz 4 for input 4', function(assert) {
+    let num = 4;
+    let result = fizzBuzzString(num);
+    assert.equal(result, '1 2 Fizz 4 ');
+});
 
 test('replace numbers divisible by 3 with Fizz', function(assert) {
     let num = 3;
