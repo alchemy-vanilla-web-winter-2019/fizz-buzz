@@ -7,7 +7,7 @@ function fizzBuzz(number) {
         return 'Fizz';
     } else if(number % 5 === 0) {
         return 'Buzz';
-    }
+    } else{return number;}
 }
 
 test('if number is divisible by 3, 5 or 15 then return FizzBuzz', function(assert) {
@@ -29,4 +29,11 @@ test('if number is divisible by 5 then return Buzz', function(assert) {
     const expected = 'Buzz';
     const result = fizzBuzz(inputNumber);
     assert.equal(result, expected);
-})
+});
+
+test('if number is not divisible by 3, 5 or 15 then return number', function(assert){
+    const inputNumber = 1;
+    const expected = inputNumber;
+    const result = fizzBuzz(inputNumber);
+    assert.equal(result, expected);
+});
