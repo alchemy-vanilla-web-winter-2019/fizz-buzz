@@ -1,5 +1,6 @@
 const test = QUnit.test;
 
+
 function fizzy(inputNumber) {
     if(inputNumber % 3 === 0 && inputNumber % 5 === 0) {
         return 'FizzBuzz';
@@ -7,10 +8,8 @@ function fizzy(inputNumber) {
         return 'Fizz';
     } else if(inputNumber % 5 === 0) {
         return 'Buzz';
-    } else {return inputNumber}
-
+    } else {return inputNumber;}
 }
-
 
 test('FizzBuzz test - number divisible by 3 and 5', function(assert) {
     const inputNumber = 15;
