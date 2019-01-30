@@ -21,28 +21,28 @@ function fizzBuzz(integer) {
 }
 
 
-test('return true if divisible by 15', function(assert) {
+test('return fizzbuzz if divisible by 15', function(assert) {
     const integer = 15;
     const expect = 'fizzbuzz';
     const result = fizzBuzz(integer);
 
     assert.equal(expect, result);
 });
-test('return true if divisible by 5', function(assert) {
+test('return buzz if divisible by 5', function(assert) {
     const integer = 5;
     const expect = 'buzz';
     const result = fizzBuzz(integer);
 
     assert.equal(expect, result);
 });
-test('return true if divisible by 3', function(assert) {
+test('return fizz if divisible by 3', function(assert) {
     const integer = 3;
     const expect = 'fizz';
     const result = fizzBuzz(integer);
 
     assert.equal(expect, result);
 });
-test('return true if not divisible by 3, 5, or 15', function(assert) {
+test('return integer if not divisible by 3, 5, or 15', function(assert) {
     const integer = 8;
     const expect = integer;
     const result = fizzBuzz(integer);
