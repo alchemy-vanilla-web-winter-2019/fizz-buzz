@@ -1,17 +1,17 @@
 const test = QUnit.test;
 
-// kept trying different things ... could not remember
-// enough to even get through the first test.
 
 function fizzBuzz(num) {
-
+    if(num % 3 === 0) {
+        return 'Fizz';
+    }
 }
 
 
 
-test('return num', function(assert) {
-    let num = 1;
-    let result = fizzBuzz(num);
-    assert.equal(result, num);
+test('return Fizz if num is divisible by 3', function(assert) {
+    const num = 12;
+    const result = fizzBuzz(num);
+    const expected = 'Fizz';
+    assert.equal(result, expected);
 });
-
