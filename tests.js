@@ -12,10 +12,15 @@ function fizzBuzz(inputInteger) {
     }
 }
 
-test('input integer return integer', function(assert) {
-    let inputInteger = 1;
+test('input integer divisible by 15 return fizzBuzz', function(assert) {
+    let inputInteger = 15;
     let result = fizzBuzz(inputInteger);
-    assert.equal(result, inputInteger);
+    assert.equal(result, 'fizzBuzz');
+});
+test('input integer divisible by 5 return buzz', function(assert) {
+    let inputInteger = 5;
+    let result = fizzBuzz(inputInteger);
+    assert.equal(result, 'buzz');
 });
 
 test('input integer divisible by 3 return fizz', function(assert) {
@@ -24,9 +29,9 @@ test('input integer divisible by 3 return fizz', function(assert) {
     assert.equal(result, 'fizz');
 });
 
-test('input integer divisible by 5 return buzz', function(assert){
-    let inputInteger = 5;
+test('input integer return integer', function(assert) {
+    let inputInteger = 1;
     let result = fizzBuzz(inputInteger);
-    assert.equal(result, 'buzz');
+    assert.equal(result, inputInteger);
 });
 
