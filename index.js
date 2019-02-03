@@ -2,6 +2,7 @@ function okilyDokily(number) {
     let result = '';
     const wordOne = 'Okily';
     const wordTwo = 'Dokily!';
+    const para = document.querySelector('p');
     
     if(number % 15 === 0) {
         result = wordOne + ' ' + wordTwo;
@@ -17,5 +18,6 @@ function okilyDokily(number) {
     }
     return result;
 
-    
+para.textContent = result;
+
 }
