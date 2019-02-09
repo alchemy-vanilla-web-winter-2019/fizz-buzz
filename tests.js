@@ -7,23 +7,22 @@ function fizzBuzz(input) {
         return 'Buzz';
     } else if(input % 3 === 0) {
         return 'Fizz';
-    } else
-        return (input);
+    } else return input;
 }
 
-test('input divisible by 15', function(assert) {
+test('if number is divisible by 15, return FizzBuzz', function(assert) {
     const input = 15;
     const result = fizzBuzz(input);
     assert.equal(result, 'FizzBuzz');
 });
 
-test('input divisible by 5', function(assert) {
+test('if number is divisible by 5, return Buzz', function(assert) {
     const input = 5;
     const result = fizzBuzz(input);
     assert.equal(result, 'Buzz');
 });
 
-test('input divisible by 3', function(assert) {
+test('if number is divisible by 3, return Fizz', function(assert) {
     const input = 3;
     const result = fizzBuzz(input);
     assert.equal(result, 'Fizz');
